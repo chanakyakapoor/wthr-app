@@ -1,0 +1,40 @@
+.temperature {
+    color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+
+    max-width: 400px;
+    width: 100%;
+}
+
+.temperature__value {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.temperature__value sup {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.temperature__container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.temperature__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.temperatiure__condition_text {
+    font-size: .8rem;
+    font-weight: 500;
+}

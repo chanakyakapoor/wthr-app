@@ -1,0 +1,29 @@
+.graph-section__graph {
+    margin-inline: auto;
+
+}
+
+.graph-section__mode_selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-inline: auto;
+}
+
+.graph-section__mode_selector h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.graph-section__selected {
+    background-color: var(--switch-bg);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}

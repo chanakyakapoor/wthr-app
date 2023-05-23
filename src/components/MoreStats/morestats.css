@@ -1,0 +1,37 @@
+.more-stats {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+
+    gap: 0.5rem;
+}
+
+.more-stats__item {
+    display: grid;
+    gap: 0.2rem;
+
+    width: 6rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    background-color: var(--switch-bg);
+}
+
+.more-stats__key {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.more-stats__emoji {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.more-stats__value {
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}

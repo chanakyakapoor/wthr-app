@@ -1,0 +1,18 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.hero__temperature_section {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.graph-section {
+    margin-top: 2rem;
+    background-color: var(--secondary-bg);
+}

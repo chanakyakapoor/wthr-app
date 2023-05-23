@@ -1,0 +1,25 @@
+.topbar__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+}
+
+.topbar__logo {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color)
+}
+
+.topbar__nav_search_button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 2rem;
+    color: var(--primary-color);
+
+    width: 2rem;
+    height: 2rem;
+}

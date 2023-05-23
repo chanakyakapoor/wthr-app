@@ -1,0 +1,46 @@
+.statsbar {
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 0.5rem;
+
+    background-color: var(--switch-bg);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    padding: 0.5rem;
+}
+
+.stat {
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+.stat__title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.stat__value {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.stat__divider {
+    width: 1px;
+    height: 2rem;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    .statsbar {
+        width: 95%;
+    }
+}

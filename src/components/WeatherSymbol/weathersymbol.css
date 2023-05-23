@@ -1,0 +1,35 @@
+.weather_symbol__round {
+    max-width: 200px;
+    min-width: 100px;
+    width: 50%;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.weather_symbol__sun {
+    background: radial-gradient(67.36% 67.36% at 50% 32.64%, #FFC324 0%, #FF9E0D 100%);
+}
+
+.weather_symbol__moon {
+    background: #7071D0;
+}
+
+.weather_symbol__container {
+    position: relative;
+    width: 100%;
+}
+
+.weather_symbol__clouds {
+    max-width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.opacity-0 {
+    opacity: 0;
+}

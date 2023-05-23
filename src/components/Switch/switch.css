@@ -1,0 +1,55 @@
+.switch {
+    background-color: var(--switch-bg);
+    height: 2rem;
+    max-width: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding-inline: 2px;
+    border-radius: 10000px;
+
+    position: relative;
+    isolation: isolate;
+}
+
+.switch__toggle_btn {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1rem;
+
+    padding-inline: 0.5rem;
+
+    border-radius: 10000px;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.switch__indicator {
+    height: 85%;
+    width: 50%;
+    border-radius: 1000px;
+
+    background-color: var(--switch-color);
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: -1;
+
+    transition: left 0.2s ease-in-out;
+}
+
+.switch__on {
+    left: calc(50% - 3px);
+}
+
+.switch__off {
+    left: 3px;
+}

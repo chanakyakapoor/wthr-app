@@ -1,0 +1,103 @@
+.sidebar {
+    background-color: var(--switch-bg);
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    padding: 1rem 0;
+    transition: 0.5s;
+    overflow-y: scroll;
+}
+
+.sidebar__close_btn {
+    fill: var(--danger-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    padding-right: 0.2rem;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-inline-start: 1rem;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    flex-grow: 1;
+}
+
+.input-group button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: var(--secondary-color);
+}
+
+.open {
+    left: 0;
+    width: 300px;
+}
+
+.recommended {
+    padding: 1rem;
+}
+
+.recommended h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.recommended .recommended__cities {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recommended .recommended__city {
+    padding: 0.5rem;
+    cursor: default;
+    border-radius: 0.5rem;
+}
+
+.recommended .recommended__city h4 {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.recommended .recommended__city p {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.recommended .recommended__city:hover {
+    filter: brightness(1.2);
+    background-color: var(--switch-bg);
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+}
